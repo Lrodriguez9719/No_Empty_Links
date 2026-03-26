@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Dead Links</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="icons/icon48.png" alt="No Dead Links icon" class="logo" />
+      <h1>No Dead Links</h1>
+      <p class="subtitle">WP Link Auditor</p>
+    </header>
+
+    <main>
+      <button id="btn-scan" class="btn btn-primary">Scan Page</button>
+
+      <div id="result" class="result hidden">
+        <span id="count">0</span> dead link(s) found
+      </div>
+
+      <button id="btn-clear" class="btn btn-secondary" disabled>
+        Clear Highlights
+      </button>
+    </main>
+  </div>
+
+  <script src="browser-polyfill.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
