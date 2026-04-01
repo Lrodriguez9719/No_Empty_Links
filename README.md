@@ -67,7 +67,7 @@ This extension is not yet published to the Chrome Web Store. To install it manua
 
 1. Go to the root project folder
 2. Remove .md files
-3. Execute this command from the terminal `zip -r empty-links-v110.zip . -x "*.git*`
+3. Execute this command from the terminal `zip -r empty-links.zip . -x "*.git*`
 
 ---
 
