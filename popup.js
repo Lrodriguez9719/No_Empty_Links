@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       count.textContent = '!';
       result.textContent = 'Cannot scan this page.';
       result.classList.remove('hidden');
-      console.error('[No Dead Links]', err);
+      console.error('[No Empty Links]', err);
     } finally {
       btnScan.disabled = false;
       btnScan.textContent = 'Scan Page';
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       result.classList.add('hidden');
       btnClear.disabled = true;
     } catch (err) {
-      console.error('[No Dead Links]', err);
+      console.error('[No Empty Links]', err);
     }
   });
 });

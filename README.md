@@ -1,6 +1,6 @@
-# No Dead Links: WP Link Auditor
+# No Empty Links: WP Link Auditor
 
-A Chrome and Firefox browser extension for WordPress developers that scans the current page for **dead links** — buttons and anchors with missing, empty, or `#` href values — and highlights them instantly.
+A Chrome and Firefox browser extension for WordPress developers that scans the current page for **empty links** — buttons and anchors with missing, empty, or `#` href values — and highlights them instantly.
 
 ---
 
@@ -18,8 +18,8 @@ These are easy to miss during QA and end up in production, creating a bad user e
 
 ## Features
 
-- 🔴 **Visual highlight** — flags dead links with a red outline and red background
-- 🔢 **Counter** — shows how many dead links were found in the popup
+- 🔴 **Visual highlight** — flags empty links with a red outline and red background
+- 🔢 **Counter** — shows how many empty links were found in the popup
 - 🧹 **Clear highlights** — removes all highlights without reloading the page
 - ⚡ **Manual trigger** — only scans when you click "Scan Page", never runs automatically
 - 🔌 **Elementor-aware** — also detects `.elementor-button` elements not wrapped in an anchor
@@ -27,7 +27,7 @@ These are easy to miss during QA and end up in production, creating a bad user e
 
 ---
 
-## Dead Link Definition
+## Empty Link Definition
 
 An element is flagged if:
 1. It is an `<a>` tag with a missing, empty (`""`), or `#` href
@@ -56,9 +56,9 @@ This extension is not yet published to the Chrome Web Store. To install it manua
 ## Usage
 
 1. Navigate to any webpage
-2. Click the **No Dead Links** icon in your browser toolbar
+2. Click the **No Empty Links** icon in your browser toolbar
 3. Click **Scan Page**
-4. Dead links are highlighted in red on the page and counted in the popup
+4. Empty links are highlighted in red on the page and counted in the popup
 5. Click **Clear Highlights** to remove all highlights
 
 ---
@@ -77,7 +77,7 @@ This extension is not yet published to the Chrome Web Store. To install it manua
 - [ ] Publish to Chrome Web Store & Firefox Add-ons
 - [ ] Visibility filter (option to skip hidden elements)
 - [ ] Test support for Divi, Beaver Builder, WPBakery
-- [ ] Export dead links to CSV
+- [ ] Export empty links to CSV
 - [ ] Toolbar icon badge with live count
 
 ---

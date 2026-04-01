@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "No Dead Links: WP Link Auditor",
-  "version": "1.0.0",
-  "description": "Scans the current page for dead links (missing, empty, or '#' hrefs) and highlights them.",
+  "name": "No Empty Links: WP Link Auditor",
+  "version": "1.1.0",
+  "description": "Scans the current page for empty links (missing, empty, or '#' hrefs) and highlights them.",
 
   "permissions": [
     "activeTab",
@@ -17,7 +17,7 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "No Dead Links"
+    "default_title": "No Empty Links"
   },
 
   "icons": {
@@ -29,8 +29,12 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "no-dead-links@wpauditor",
-      "strict_min_version": "109.0"
+      "id": "no-empty-links@wpauditor",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
     }
   }
 }

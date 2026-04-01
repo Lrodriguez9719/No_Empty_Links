@@ -1,6 +1,6 @@
-# No Dead Links: WP Link Auditor
+# No Empty Links: WP Link Auditor
 
-A Chrome and Firefox browser extension that scans the current webpage for "dead" links — anchor tags with missing, empty, or `#` href values — and highlights them visually so WordPress developers can catch them before launch.
+A Chrome and Firefox browser extension that scans the current webpage for "empty" links — anchor tags with missing, empty, or `#` href values — and highlights them visually so WordPress developers can catch them before launch.
 
 ## Problem
 WordPress themes and Elementor templates often ship with placeholder `<a href="#">` buttons. These are easy to miss during QA and can reach production unfixed.
@@ -10,12 +10,12 @@ WordPress themes and Elementor templates often ship with placeholder `<a href="#
 - `webextension-polyfill` for cross-browser `browser.*` API support
 - Vanilla JavaScript, HTML, CSS — no build tools required
 
-## Dead Link Definition
-An element is flagged as a dead link if:
+## Empty Link Definition
+An element is flagged as a empty link if:
 1. It is an `<a>` tag and its `href` is missing, empty (`""`), or exactly `"#"`
 2. It has the class `.elementor-button` but is **not** an `<a>` tag (e.g., a `<div>` used as a button without a wrapping anchor)
 
-> **Note:** The scanner flags all matching DOM elements, including those hidden or off-screen. This is intentional — hidden dead links are still dead links. A future option to filter by visibility may be added.
+> **Note:** The scanner flags all matching DOM elements, including those hidden or off-screen. This is intentional — hidden empty links are still empty links. A future option to filter by visibility may be added.
 
 ## Scope
 **In scope:**
@@ -33,7 +33,7 @@ An element is flagged as a dead link if:
 - Plain `<button>` elements not related to Elementor
 
 ## File Structure
-no_dead_links/
+no_empty_links/
 ├── PROJECT.md ← this file (AI context document)
 ├── README.md ← public-facing GitHub readme
 ├── manifest.json ← extension manifest (MV3)
@@ -63,6 +63,6 @@ no_dead_links/
 ## Future Ideas
 - Option to skip hidden/off-screen elements (visibility filter toggle)
 - Test and check support for other page builders (Divi, Beaver Builder, WPBakery)
-- Export dead links list to CSV
+- Export empty links list to CSV
 - Count badge on the extension toolbar icon
 - Auto-highlight on page load (optional toggle in settings)
